@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boutique Elsa | Moda Feminina</title>
+
+    <meta name="description" content="Descubra as últimas tendências da moda feminina na nossa boutique online. Roupas, vestidos, sapatos e acessórios.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <div id="foto-ampliada" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:99999; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;"><button type="button" onclick="fecharFoto()" style="position:absolute; top:15px; right:20px; font-size:35px; color:white; background:none; border:none; cursor:pointer;">
+    &times;
+</button>
+
+<img id="imagem-grande" src="" alt="Fotografia ampliada" style="max-width:100%; max-height:85vh; object-fit:contain;">
+
+</div><script>
+function abrirFoto(caminho) {
+    var janela = document.getElementById("foto-ampliada");
+    var imagem = document.getElementById("imagem-grande");
+
+    imagem.src = caminho;
+    janela.style.display = "flex";
+}
+
+function fecharFoto() {
+    document.getElementById("foto-ampliada").style.display = "none";
+}
+</script>
+<body>
+
+    <!-- CABEÇALHO -->
+  <header class="cabecalho">
+
+    <div class="logo">
+        <img src="logo.png">
+
+        <div class="logo-texto">
+            <h1>Boutique Elsa</h1>
+            <p>Elegância em cada detalhe</p>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+  </header>
+
+
+    <!-- DESTAQUE PRINCIPAL -->
+    <section class="destaque" id="inicio">
+
+        <div class="destaque-conteudo">
+
+            <p class="subtitulo">NOVA COLEÇÃO</p>
+
+            <h2>A tua beleza, o teu estilo!</h2>
+
+            <>
+                Descobre roupas, sapatos e acessórios
+                que combinam com a tua personalidade.
+
+          <div class="botoes-destaque">
+
+    <a href="#produtos" class="botao">
+        Ver Coleção
+    </a>
+
+    <a href="https://wa.me/258863074345"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="botao-whatsapp">
+        Encomendar pelo WhatsApp
+    </a>
+
+          </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIAS -->
+    <section class="categorias">
+
+        <h2>Explora as nossas categorias</h2>
+
+        <div class="categorias-lista">
+
+            <a href="#produtos">Vestidos</a>
+            <a href="#produtos">Conjuntos</a>
+            <a href="#produtos">Sapatos</a>
+            <a href="#produtos">Bolsas</a>
+            <a href="#produtos">Acessorios</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+    <section class="produtos" id="produtos">
+
+        <div class="titulo-seccao">
+            <p>ESCOLHAS ESPECIAIS</p>
+            <h2>Os nossos produtos</h2>
+            <span>Encontra o teu próximo look favorito.</span>
+        </div>
+
+
+        <div class="produtos-lista">
+
+
+            <!-- PRODUTO  -->
+            <article class="produto">
+
+            <img src="vestido1.jpg"
+     alt="Vestido feminino"
+     onclick="abrirFoto(this.src)"
+     style="cursor: zoom-in;">
+
+                <div class="produto-info">
+
+                    <p class="categoria-produto">Vestidos</p>
+
+                    <h3>Vestido Elegante</h3>
+
+                    <p class="preco">Preço: 1.500 MT</p>
+
+                    <a class="botao-comprar"
+                       href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Vestido%20Elegante."
+                       target="_blank">
+                        Encomendar
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 2 -->
+            <article class="produto">
+
+                <img src="vestido2.jpg" alt="Vestido feminino moderno"
+               onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+
+                <div class="produto-info">
+
+                    <p class="categoria-produto">Vestidos</p>
+
+                    <h3>Vestido Moderno</h3>
+
+                    <p class="preco">Preço: 2.800 MT</p>
+
+                    <a class="botao-comprar"
+                       href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Vestido%20Moderno."
+                       target="_blank">
+                        Encomendar
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 3 -->
+            <article class="produto">
+
+                <img src="conjunto1.jpg" alt="Conjunto feminino"
+                   onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+
+                <div class="produto-info">
+
+                    <p class="categoria-produto">Conjuntos</p>
+
+                    <h3>Conjunto Feminino</h3>
+
+                    <p class="preco">Preço: 2.200 MT</p>
+
+                    <a class="botao-comprar"
+                       href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Conjunto%20Feminino."
+                       target="_blank">
+                        Encomendar
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 4 -->
+            <article class="produto">
+
+                <img src="sapatos1.jpg" alt="Sapatos femininos"
+                   onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+
+                <div class="produto-info">
+
+                    <p class="categoria-produto">Sapatos</p>
+
+                    <h3>Sapatos Femininos</h3>
+
+                    <p class="preco">Preço: 1.200 MT</p>
+
+                    <a class="botao-comprar"
+                       href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nos%20Sapatos%20Femininos."
+                       target="_blank">
+                        Encomendar
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 5 -->
+            <article class="produto">
+
+                <img src="bolsa1.jpg" alt="Bolsa feminina"
+                   onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+
+                <div class="produto-info">
+
+                    <p class="categoria-produto">Bolsas</p>
+
+                    <h3>Bolsa Feminina</h3>
+
+                    <p class="preco">Preço: 950 MT</p>
+
+                    <a class="botao-comprar"
+                       href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Feminina."
+                       target="_blank">
+                        Encomendar
+                    </a>
+
+                </div>
+
+            </article>
+
+                </>
+
+            </>
+<!-- VESTIDOS ADICIONAIS -->
+
+<article class="produto">
+    <img src="vestido3.jpg" alt="Vestido feminino 3">
+    <div class="produto-info">
+        <p class="categoria-produto">Vestidos</p>
+        <h3>Vestido Clássico</h3>
+        <p class="preco">Preço: 4.500 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Vestido%20Clássico." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="vestido4.jpg" alt="Vestido feminino 4"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Vestidos</p>
+        <h3>Vestido Floral</h3>
+        <p class="preco">Preço: 3.900 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Vestido%20Floral." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="vestido5.jpg" alt="Vestido feminino 5"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Vestidos</p>
+        <h3>Vestido Moderno 2</h3>
+        <p class="preco">Preço: 2.900 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Vestido%20Moderno%202." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="vestido6.jpg" alt="Vestido feminino 6"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Vestidos</p>
+        <h3>Vestido de Festa</h3>
+        <p class="preco">Preço: 4.800 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Vestido%20de%20Festa." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+
+<!-- SAPATOS ADICIONAIS -->
+
+<article class="produto">
+    <img src="sapatos2.jpg" alt="Sapatos femininos 2"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Sapatos</p>
+        <h3>Sandálias Elegantes</h3>
+        <p class="preco">Preço: 900 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nas%20Sandálias%20Elegantes." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="sapatos3.jpg" alt="Sapatos femininos 3"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Sapatos</p>
+        <h3>Sapatos de Salto</h3>
+        <p class="preco">Preço: 1.400 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nos%20Sapatos%20de%20Salto." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+
+<!-- BOLSAS ADICIONAIS -->
+
+<article class="produto">
+    <img src="bolsa2.jpg" alt="Bolsa feminina 2"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Bolsas</p>
+        <h3>Bolsa Elegante</h3>
+        <p class="preco">Preço: 750 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Elegante." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="bolsa3.jpg" alt="Bolsa feminina 3"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Bolsas</p>
+        <h3>Bolsa Moderna</h3>
+        <p class="preco">Preço: 2.000 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Moderna." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="bolsa4.jpg" alt="Bolsa feminina 4"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Bolsas</p>
+        <h3>Bolsa Casual</h3>
+        <p class="preco">Preço: 1.100 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Casual." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+
+<!-- ACESSÓRIOS ADICIONAIS -->
+
+<article class="produto">
+    <img src="acessorio2.jpg" alt="Acessório feminino 2"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Acessórios</p>
+        <h3>Colar Feminino</h3>
+        <p class="preco">Preço: 650 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Colar%20Feminino." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="acessorio3.jpg" alt="Acessório feminino 3"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Acessórios</p>
+        <h3>Brincos Femininos</h3>
+        <p class="preco">Preço: 400 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nos%20Brincos%20Femininos." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="acessorio4.jpg" alt="Acessório feminino 4"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Acessórios</p>
+        <h3>Pulseira Feminina</h3>
+        <p class="preco">Preço: 350 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20na%20Pulseira%20Feminina." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="acessorio5.jpg" alt="Acessório feminino 5"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Acessórios</p>
+        <h3>Óculos de Sol</h3>
+        <p class="preco">Preço: 350 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nos%20Óculos%20de%20Sol." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+
+<!-- CHAPÉUS -->
+
+<article class="produto">
+    <img src="chapeu1.jpg" alt="Chapéu feminino 1"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Chapéus</p>
+        <h3>Chapéu Elegante</h3>
+        <p class="preco">Preço: 760 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Chapéu%20Elegante." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="chapeu2.jpg" alt="Chapéu feminino 2"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Chapéus</p>
+        <h3>Chapéu Casual</h3>
+        <p class="preco">Preço: 800 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Chapéu%20Casual." target="_blank">Encomendar</a>
+    </div>
+</article>
+
+<article class="produto">
+    <img src="chapeu3.jpg" alt="Chapéu feminino 3"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+    <div class="produto-info">
+        <p class="categoria-produto">Chapéus</p>
+        <h3>Chapéu de Verão</h3>
+        <p class="preco">Preço: 1.300 MT</p>
+        <a class="botao-comprar" href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20no%20Chapéu%20de%20Verão." target="_blank">Encomendar</a>
+    </div>
+</article>
+          <!-- CALÇAS FEMININAS -->
+
+
+
+
+<article class="produto">
+    <img src="calca2.jpg" alt="Calças jeans femininas"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+
+    <div class="produto-info">
+        <p class="categoria-produto">Calças</p>
+        <h3>Calças Jeans</h3>
+        <p class="preco">Preço: 1.000 MT</p>
+
+        <a class="botao-comprar"
+           href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nas%20Calças%20Jeans."
+           target="_blank">
+            Encomendar
+        </a>
+    </div>
+</article>
+
+
+<article class="produto">
+    <img src="calca3.jpg" alt="Calças femininas modernas"
+       onclick="abrirFoto(this.src)" style="cursor:zoom-in;">
+
+    <div class="produto-info">
+        <p class="categoria-produto">Calças</p>
+        <h3>Calças Modernas</h3>
+        <p class="preco">Preço: 1.700 MT</p>
+
+        <a class="botao-comprar"
+           href="https://wa.me/258840220512?text=Olá!%20Tenho%20interesse%20nas%20Calças%20Modernas."
+           target="_blank">
+            Encomendar
+        </a>
+    </div>
+</article>
+
+
+        </>
+
+    </section>
+
+
+    <!-- SOBRE NÓS --><section class="sobre" id="sobre"><div class="sobre-conteudo">
+
+    <p class="subtitulo">CONHEÇA A NOSSA BOUTIQUE</p>
+
+    <h2>Sobre Nós</h2>
+
+    <p>Descobre a nossa história, missão e visão.</p>
+
+    <div class="sobre-opcoes">
+
+        <button class="opcao-sobre" onclick="mostrarSobre('quem-somos', this)">
+            Quem Somos
+        </button>
+
+        <button class="opcao-sobre" onclick="mostrarSobre('historia', this)">
+            A Nossa História
+        </button>
+
+        <button class="opcao-sobre" onclick="mostrarSobre('missao', this)">
+            A Nossa Missão
+        </button>
+
+        <button class="opcao-sobre" onclick="mostrarSobre('visao', this)">
+            A Nossa Visão
+        </button>
+
+    </div>
+
+    <div class="conteudo-sobre" id="quem-somos">
+        <h3>Quem Somos</h3>
+        <p>
+            A Boutique Elsa Feminina é uma loja online criada
+            em Xai-Xai, província de Gaza, Moçambique.
+            Vendemos vestidos, saias, calças, blusas,
+            conjuntos modernos e acessórios femininos.
+        </p>
+    </div>
+
+    <div class="conteudo-sobre" id="historia" hidden>
+        <h3>A Nossa História</h3>
+        <p>
+            Sou uma jovem moçambicana, estudante e empreendedora,
+            apaixonada pela moda feminina. Criei a Boutique Elsa
+            Feminina para aproximar a moda das mulheres
+            moçambicanas e facilitar a compra de roupas bonitas,
+            modernas e de qualidade.
+        </p>
+    </div>
+
+    <div class="conteudo-sobre" id="missao" hidden>
+        <h3>A Nossa Missão</h3>
+        <p>
+            Facilitar a compra de roupa feminina em Moçambique,
+            oferecendo produtos modernos e uma experiência de
+            compra online simples, rápida e conveniente.
+        </p>
+    </div>
+
+    <div class="conteudo-sobre" id="visao" hidden>
+        <h3>A Nossa Visão</h3>
+        <p>
+            Tornar a Boutique Elsa Feminina uma loja online
+            reconhecida em Moçambique pela confiança, qualidade
+            dos produtos e variedade da moda feminina.
+        </p>
+    </div>
+
+</div>
+
+</section><script>
+function mostrarSobre(id, botao) {
+    document.querySelectorAll('.conteudo-sobre').forEach(function(item) {
+        item.hidden = true;
+    });
+
+    document.getElementById(id).hidden = false;
+
+    document.querySelectorAll('.opcao-sobre').forEach(function(item) {
+        item.classList.remove('ativo');
+    });
+
+    botao.classList.add('ativo');
+}
+</script>
+
+    </>
+
+</>
+
+        </div>
+
+    </>
+
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+
+        <h2>Fala connosco</h2>
+
+        <p>
+            Tens dúvidas sobre tamanhos, preços ou disponibilidade?
+            Estamos disponíveis para te ajudar.
+        </p>
+
+        <a href="https://wa.me/258840220512"
+           target="_blank"
+           class="botao-contacto">
+            Contactar pelo WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <h2>Boutique Elsa online</h2>
+1        <p>Elegância em cada detalhe.</p>
+
+        <p>
+            &copy; 2026 Boutique Elsa.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>

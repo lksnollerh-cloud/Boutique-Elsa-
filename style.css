@@ -1,0 +1,598 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #ffffff;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #f0dce5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.logo-texto h1 {
+    color: #a52c61;
+    font-size: 25px;
+}
+
+.logo-texto p {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #c13e78;
+}
+
+
+/* DESTAQUE PRINCIPAL */
+
+.destaque {
+    min-height: 350px;
+    padding: 60px 7%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #f8dce8, #fff1f6);
+}
+
+.destaque-conteudo {
+    max-width: 520px;
+}
+
+.subtitulo {
+    color: #a52c61;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.destaque h2 {
+    font-size: 42px;
+    color: #54243a;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.destaque-conteudo > p:not(.subtitulo) {
+    margin-bottom: 25px;
+    color: #654d59;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #a52c61;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #7e2049;
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    padding: 35px 5%;
+    text-align: center;
+    background-color: white;
+}
+
+.categorias h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #54243a;
+}
+
+.categorias-lista {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.categorias-lista a {
+    border: 1px solid #e7b5cb;
+    color: #a52c61;
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.categorias-lista a:hover {
+    background-color: #a52c61;
+    color: white;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    padding: 55px 5%;
+}
+
+.titulo-seccao {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-seccao > p {
+    color: #a52c61;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.titulo-seccao h2 {
+    font-size: 30px;
+    color: #54243a;
+    margin: 8px 0;
+}
+
+.titulo-seccao span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* GRELHA DOS PRODUTOS */
+
+.produtos-lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* CARTÃO DE CADA PRODUTO */
+
+.produto {
+    background-color: #ffffff;
+    border: 1px solid #f0dce5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(80, 30, 50, 0.06);
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+}
+
+
+/* IMAGENS DOS PRODUTOS */
+
+.produto img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+
+/* INFORMAÇÕES DOS PRODUTOS */
+
+.produto-info {
+    padding: 14px;
+}
+
+.categoria-produto {
+    color: #a52c61;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.produto-info h3 {
+    color: #3d2632;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.preco {
+    color: #a52c61;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* BOTÃO DE ENCOMENDA */
+
+.botao-comprar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #a52c61;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.botao-comprar:hover {
+    background-color: #7e2049;
+}
+
+
+/* SOBRE NÓS */
+
+.sobre {
+    background-color: #f9e8ef;
+    padding: 55px 7%;
+}
+
+.sobre-conteudo {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    color: #54243a;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.sobre-conteudo p:not(.subtitulo) {
+    color: #604b56;
+    margin-bottom: 15px;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    text-align: center;
+    padding: 55px 7%;
+    background-color: #ffffff;
+}
+
+.contacto h2 {
+    color: #54243a;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    color: #666;
+    max-width: 550px;
+    margin: 0 auto 25px;
+}
+
+.botao-contacto {
+    display: inline-block;
+    background-color: #168b55;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botao-contacto:hover {
+    background-color: #106c40;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+    text-align: center;
+    background-color: #54243a;
+    color: white;
+    padding: 30px 15px;
+}
+
+.rodape h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.rodape p {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #f5dce7;
+}
+
+
+/* TELEMÓVEIS */
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .destaque {
+        min-height: 300px;
+        padding: 45px 6%;
+    }
+
+    .destaque h2 {
+        font-size: 32px;
+    }
+
+    .produtos {
+        padding: 40px 4%;
+    }
+
+    .produtos-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .produto img {
+        height: 125px;
+    }
+
+    .produto-info {
+        padding: 9px;
+    }
+
+    .produto-info h3 {
+        font-size: 14px;
+    }
+
+    .preco {
+        font-size: 13px;
+    }
+
+    .botao-comprar {
+        font-size: 12px;
+        padding: 9px 3px;
+    }
+
+    .titulo-seccao h2 {
+        font-size: 25px;
+    }
+
+}
+.botoes-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #168b55;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botao-whatsapp:hover {
+    background-color: #106c40;
+}
+
+@media (max-width: 400px) {
+    .botoes-destaque {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+.sobre-opcoes {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin: 25px 0;
+}
+
+.opcao-sobre {
+background-color: #f3d5e2;
+color: #632846;
+border: 1px solid #e3b5ca;
+border-radius: 8px;
+padding: 12px 16px;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.opcao-sobre:hover,
+.opcao-sobre.ativo {
+background-color: #8e315c;
+color: white;
+}
+
+.conteudo-sobre {
+background-color: #fff7fa;
+border: 1px solid #edcfdd;
+border-radius: 10px;
+padding: 20px;
+margin-top: 15px;
+line-height: 1.7;
+}
+
+.conteudo-sobre h3 {
+color: #8e315c;
+margin-top: 0;
+}
+
+.conteudo-sobre[hidden] {
+display: none;
+}
+/* IDENTIDADE VISUAL — BOUTIQUE ELSA FEMININA */
+
+body {
+background-color: #FFF9FB;
+color: #333333;
+}
+
+/* Cabeçalho */
+.cabecalho {
+background-color: #6D1738;
+color: #FFFFFF;
+}
+
+/* Nome da boutique */
+.logo h1 {
+color: #FFFFFF;
+}
+
+.logo p {
+color: #F4DDE6;
+}
+
+/* Menu de navegação */
+.menu a {
+color: #FFFFFF;
+}
+
+.menu a:hover {
+color: #C9A227;
+}
+
+/* Títulos das secções */
+.produtos h2,
+.sobre h2,
+.contacto h2 {
+color: #6D1738;
+}
+
+/* Cartões dos produtos */
+.produto {
+background-color: #FFFFFF;
+border: 1px solid #E8D5DC;
+border-radius: 10px;
+}
+
+/* Preços */
+.produto .preco {
+color: #8E315C;
+font-weight: bold;
+}
+
+/* Botões principais */
+.botao,
+.botao-contacto {
+background-color: #8E315C;
+color: #FFFFFF;
+border: 1px solid #8E315C;
+border-radius: 6px;
+}
+
+.botao:hover,
+.botao-contacto:hover {
+background-color: #6D1738;
+}
+
+/* Botão de encomenda pelo WhatsApp */
+.botao-whatsapp {
+background-color: #168B55;
+color: #FFFFFF;
+}
+
+/* Detalhes dourados */
+.subtitulo {
+color: #C9A227;
+font-weight: bold;
+}
+
+/* Secção Sobre Nós */
+.conteudo-sobre {
+background-color: #FFFFFF;
+border: 1px solid #E8D5DC;
+border-radius: 10px;
+}
+
+/* Opções de Sobre Nós */
+.opcao-sobre {
+background-color: #FFF9FB;
+color: #6D1738;
+border: 1px solid #C9A227;
+border-radius: 8px;
+}
+
+.opcao-sobre:hover,
+.opcao-sobre.ativo {
+background-color: #6D1738;
+color: #FFFFFF;
+border-color: #C9A227;
+}
+
+/* Rodapé */
+.rodape {
+background-color: #6D1738;
+color: #FFFFFF;
+}
+
+.rodape a {
+color: #F4DDE6;
+}
